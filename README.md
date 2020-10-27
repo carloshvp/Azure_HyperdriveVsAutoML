@@ -75,7 +75,7 @@ As we see below, AutoML tries algorithms with varying results at the beginning, 
 
 ![alt text](images/AutoML_acc.png "AutoML acuracy")
 
-In the next picture we see sorted by accuracy the top performing iterations and the related algorithm
+In the next picture we see sorted by accuracy the top performing iterations and the related algorithm. In this case, Voting Ensemble was the one which got highest accuracy (91.76%) although Standard Scaler Wrapper with XGBoostClassifier was very near (91.63%). Voting Ensemble, together with Stacking Ensemble (3rd best performer), is a type of ensemble algorithm which combines multiple models to achieve higher performance than the single models individually. "Voting Ensemble" particularly uses the weighted average of predicted class probabilities. The ensemble algorithms are enabled by default in Azure AutoML and they run at the end, after all other algorithms have finished, so that they can be combined and achieve a better performance.
 ![alt text](images/AutoML_runs.png "AutoML runs")
 
 ## HyperDrive Vs AutoML. Which one should we use?
